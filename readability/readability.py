@@ -223,7 +223,7 @@ class Document:
                     i.set("id", "readabilityBody")
                 if ruthless:
                     self.remove_unlikely_candidates()
-                self.transform_misused_divs_into_paragraphs()
+#                 self.transform_misused_divs_into_paragraphs()
                 candidates = self.score_paragraphs()
 
                 best_candidate = self.select_best_candidate(candidates)
